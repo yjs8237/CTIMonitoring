@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTIMonitoring", "CTIMonitoring\CTIMonitoring.csproj", "{CBAC1C00-774C-47CD-BDFC-87E43A5DE2D7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTIMonitoringTEST", "CTIMonitoringTEST\CTIMonitoringTEST.csproj", "{B1AC97AA-DCCD-4A7C-AB24-ECB7B41FB1F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTIMonitoring", "CTIMonitoring\CTIMonitoring.csproj", "{CBAC1C00-774C-47CD-BDFC-87E43A5DE2D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CBAC1C00-774C-47CD-BDFC-87E43A5DE2D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CBAC1C00-774C-47CD-BDFC-87E43A5DE2D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CBAC1C00-774C-47CD-BDFC-87E43A5DE2D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CBAC1C00-774C-47CD-BDFC-87E43A5DE2D7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B1AC97AA-DCCD-4A7C-AB24-ECB7B41FB1F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B1AC97AA-DCCD-4A7C-AB24-ECB7B41FB1F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1AC97AA-DCCD-4A7C-AB24-ECB7B41FB1F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1AC97AA-DCCD-4A7C-AB24-ECB7B41FB1F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBAC1C00-774C-47CD-BDFC-87E43A5DE2D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBAC1C00-774C-47CD-BDFC-87E43A5DE2D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBAC1C00-774C-47CD-BDFC-87E43A5DE2D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBAC1C00-774C-47CD-BDFC-87E43A5DE2D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
