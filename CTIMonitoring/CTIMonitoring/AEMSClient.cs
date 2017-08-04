@@ -35,24 +35,28 @@ namespace CTIMonitoring
             {
                 sock = new TcpClient();
 
+                logwrite.write("connect", "\t Try to Connect " + ip + " , " + port);
+
                 IAsyncResult result = sock.BeginConnect(ip, port, null, null);
                 var success = result.AsyncWaitHandle.WaitOne(TimeSpan.FromMilliseconds(3000), true);
 
                 if (success)
                 {
-                    writeStream = sock.GetStream();
+                    logwrite.write("connect", "\t Connection Success !!" + ip + " , " + port);
 
+                    writeStream = sock.GetStream();
                     writer = new StreamWriter(writeStream);
 
-                    Encoding encode = System.Text.Encoding.GetEncoding("UTF-8");
-                    reader = new StreamReader(writeStream, encode);
-
+                    //Encoding encode = System.Text.Encoding.GetEncoding("ANSI");
+                    //reader = new StreamReader(writeStream, encode);
+                    //reader = new StreamReader(writeStream);
+                    
                 }
                 else
                 {
+                    logwrite.write("connect", "\t Connection Fail !!" + ip + " , " + port);
                     return ERRORCODE.SOCKET_CONNECTION_FAIL;
                 }
-
             }
             catch (Exception e)
             {
@@ -78,16 +82,6 @@ namespace CTIMonitoring
                     sock.Close();
                     sock = null;
                 }
-                if (this.writeStream != null)
-                {
-                    writeStream.Close();
-                    writeStream = null;
-                }
-                if (this.reader != null)
-                {
-                    reader.Close();
-                    reader = null;
-                }
 
                 receiver.disconnect();
             }
@@ -100,9 +94,24 @@ namespace CTIMonitoring
             return ERRORCODE.SUCCESS;
         }
 
+        public int send(string msg)
+        {
+            try
+            {
+                logwrite.write("send", "SEND MSG -> " + msg);
+                writer.WriteLine(msg);
+                writer.Flush();
+            }
+            catch (Exception e)
+            {
+                logwrite.write("send", e.ToString());
+            }
+            return ERRORCODE.SUCCESS;
+        }
+
         public int startMonitoring()
         {
-            receiver = new MonReceiver(reader, logwrite, monObj);
+            receiver = new MonReceiver(sock, logwrite, monObj);
             ThreadStart recvts = new ThreadStart(receiver.runThread);
             Thread recvThread = new Thread(recvts);
             recvThread.Start();

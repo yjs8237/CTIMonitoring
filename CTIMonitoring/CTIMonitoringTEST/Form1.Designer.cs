@@ -38,7 +38,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(308, 14);
+            this.button1.Location = new System.Drawing.Point(441, 14);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 23);
             this.button1.TabIndex = 0;
@@ -48,7 +48,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(308, 43);
+            this.button2.Location = new System.Drawing.Point(441, 43);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(92, 23);
             this.button2.TabIndex = 1;
@@ -58,27 +58,27 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(35, 14);
+            this.textBox1.Location = new System.Drawing.Point(54, 16);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(71, 21);
+            this.textBox1.Size = new System.Drawing.Size(120, 21);
             this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "127.0.0.1";
+            this.textBox1.Text = "192.168.9.130";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(124, 14);
+            this.textBox2.Location = new System.Drawing.Point(203, 14);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(77, 21);
+            this.textBox2.Size = new System.Drawing.Size(110, 21);
             this.textBox2.TabIndex = 3;
-            this.textBox2.Text = "127.0.0.1";
+            this.textBox2.Text = "192.168.9.150";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(221, 14);
+            this.textBox3.Location = new System.Drawing.Point(341, 14);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(60, 21);
             this.textBox3.TabIndex = 4;
-            this.textBox3.Text = "9993";
+            this.textBox3.Text = "9882";
             // 
             // textBox4
             // 

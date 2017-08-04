@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Collections;
+using JSON;
+
 
 namespace CTIMonitoring
 {
@@ -14,6 +16,9 @@ namespace CTIMonitoring
         private ArrayList ipList;
         private int port;
         bool isConnected;
+
+        public bool disconnectReq;
+
         public Monitoring()
         {
             logwrite = LogWrite.getInstance();
@@ -26,11 +31,14 @@ namespace CTIMonitoring
                 return ERRORCODE.FAIL;
             }
 
+            disconnectReq = true;
+
             return client.disconnect();
         }
 
         public int monConnect(string mon_A_IP, string mon_B_IP, int port)
         {
+            disconnectReq = false;
 
             logwrite.write("monConnect", "** call monConnect(" + mon_A_IP + " , " + mon_B_IP + " , " + port + ")");
 
@@ -53,7 +61,26 @@ namespace CTIMonitoring
                     logwrite.write("monConnect", "CONNECT SUCCESS!!");
                     currentConnectedIP = ip;
                     isConnected = true;
+
                     client.startMonitoring();
+
+                    JsonHandler jsonHandler = new JsonHandler();
+                    jsonHandler.setType("M07");
+                    jsonHandler.setCmd("M07");
+                    string jsonData = jsonHandler.getJsonData();
+
+                    jsonData = jsonData.Replace("type", "@type");
+
+                    client.send(jsonData);
+
+                    jsonHandler.setType("M08");
+                    jsonHandler.setCmd("M08");
+                    jsonData = jsonHandler.getJsonData();
+
+                    jsonData = jsonData.Replace("type", "@type");
+
+                    client.send(jsonData);
+
                     break;
                 }
                 else

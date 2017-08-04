@@ -3,8 +3,9 @@ C:\Development\SRC\CTIMonitoring\CTIMonitoring\CTIMonitoringTEST\obj\Debug\CTIMo
 C:\Development\SRC\CTIMonitoring\CTIMonitoring\CTIMonitoringTEST\obj\Debug\CTIMonitoringTEST.csproj.GenerateResource.Cache
 C:\Development\SRC\CTIMonitoring\CTIMonitoring\CTIMonitoringTEST\bin\Debug\CTIMonitoringTEST.exe
 C:\Development\SRC\CTIMonitoring\CTIMonitoring\CTIMonitoringTEST\bin\Debug\CTIMonitoringTEST.pdb
-C:\Development\SRC\CTIMonitoring\CTIMonitoring\CTIMonitoringTEST\bin\Debug\CTIMonitoring.dll
-C:\Development\SRC\CTIMonitoring\CTIMonitoring\CTIMonitoringTEST\bin\Debug\CTIMonitoring.pdb
 C:\Development\SRC\CTIMonitoring\CTIMonitoring\CTIMonitoringTEST\obj\Debug\CTIMonitoringTEST.exe
 C:\Development\SRC\CTIMonitoring\CTIMonitoring\CTIMonitoringTEST\obj\Debug\CTIMonitoringTEST.pdb
 C:\Development\SRC\CTIMonitoring\CTIMonitoring\CTIMonitoringTEST\obj\Debug\CTIMonitoringTEST.Form1.resources
+C:\Development\SRC\CTIMonitoring\CTIMonitoring\CTIMonitoringTEST\bin\Debug\CTIMonitoringTEST.exe.config
+C:\Development\SRC\CTIMonitoring\CTIMonitoring\CTIMonitoringTEST\bin\Debug\CTIMonitoring.dll
+C:\Development\SRC\CTIMonitoring\CTIMonitoring\CTIMonitoringTEST\bin\Debug\CTIMonitoring.pdb

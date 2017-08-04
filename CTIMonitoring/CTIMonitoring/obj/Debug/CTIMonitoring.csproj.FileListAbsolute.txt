@@ -1,5 +1,4 @@
 C:\Development\SRC\CTIMonitoring\CTIMonitoring\CTIMonitoring\bin\Debug\CTIMonitoring.dll
 C:\Development\SRC\CTIMonitoring\CTIMonitoring\CTIMonitoring\bin\Debug\CTIMonitoring.pdb
-C:\Development\SRC\CTIMonitoring\CTIMonitoring\CTIMonitoring\obj\Debug\CTIMonitoring.csprojResolveAssemblyReference.cache
 C:\Development\SRC\CTIMonitoring\CTIMonitoring\CTIMonitoring\obj\Debug\CTIMonitoring.dll
 C:\Development\SRC\CTIMonitoring\CTIMonitoring\CTIMonitoring\obj\Debug\CTIMonitoring.pdb
